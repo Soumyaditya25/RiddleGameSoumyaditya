@@ -1,0 +1,162 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  #game-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(3, 143, 134);
+    text-align: center;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1000;
+    text-shadow: 
+        2px 2px 3px black, /* Black outline */
+        0 0 10px rgba(3, 143, 134, 0.8); /* Glowing effect */
+}
+
+
+
+  
+  
+  /* Add padding to ensure content doesn't overlap the fixed header */
+  #game-container {
+    padding-top: 80px; /* Matches the height of the header */
+  }
+  
+  
+  #game-container {
+    width: 90%;
+    max-width: 500px;
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Progress Bar */
+  #progress-bar {
+    width: 100%;
+    background-color: #44475a;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  #progress {
+    width: 0;
+    height: 100%;
+    background-color: #50fa7b;
+    transition: width 0.5s;
+  }
+  
+  /* Score Display */
+  #score-display {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Instructions Modal */
+  #instructions-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #instructions-modal h2 {
+    margin-bottom: 15px;
+  }
+  
+  #start-game {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #6272a4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #start-game:hover {
+    background: #44475a;
+  }
+  
+  /* Game Area */
+  #timer {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #riddle-area {
+    margin: 20px 0;
+  }
+  
+  #riddle-answer {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 2px solid #6272a4;
+    border-radius: 5px;
+  }
+  
+  #submit-answer, #use-hint {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit-answer {
+    background: #50fa7b;
+    color: #000;
+  }
+  
+  #use-hint {
+    background: #ffb86c;
+    color: #000;
+  }
+  
+  /* End Modal */
+  #end-modal {
+    text-align: center;
+  }
+  
+  #end-modal img {
+    width: 100px;
+    margin: 15px 0;
+  }
+  
+  #restart-game {
+    background: #50fa7b;
+    color: #000;
+  }
+  
+  #exit-end-game {
+    background: #ff5555;
+    color: #fff;
+  }
+  

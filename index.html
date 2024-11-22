@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Loop Escape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Name -->
+  <header id="game-header">
+    <h1>Riddle Odyssey</h1>
+  </header>
+  
+  <div id="game-container">
+    <!-- Instructions Modal -->
+    <div id="instructions-modal">
+      <h2>Welcome to Time Loop Escape!</h2>
+      <p>Solve riddles, earn points, and escape the loop! Using hints will cost points.</p>
+      <button id="start-game">Start Game</button>
+    </div>
+
+    <!-- Game Area -->
+    <div id="game-area" style="display: none;">
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <div id="score-display">Score: 0</div>
+      <div id="timer">Time Left: 60s</div>
+      <div id="riddle-area">
+        <h3 id="riddle-text"></h3>
+        <input type="text" id="riddle-answer" placeholder="Enter your answer">
+        <button id="submit-answer">Submit</button>
+        <button id="use-hint">Hint</button>
+        <p id="hint-text" style="display: none;"></p>
+      </div>
+      <div id="action-buttons" style="display: none;">
+        <button id="next-level">Next Level</button>
+        <button id="exit-game">Exit Game</button>
+      </div>
+    </div>
+
+    <!-- End Game Modal -->
+    <div id="end-modal" style="display: none;">
+      <h2 id="end-title"></h2>
+      <img id="end-image" alt="Game End" />
+      <p id="end-message"></p>
+      <button id="restart-game">Restart Game</button>
+      <button id="exit-end-game">Exit Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
