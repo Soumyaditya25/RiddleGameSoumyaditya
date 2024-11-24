@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soumyaditya's Riddle</title>
+  <title>Time Loop Escape</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Game Name -->
   <header id="game-header">
     <h1>Riddle Odyssey</h1>
   </header>
-  
+
   <div id="game-container">
     <!-- Instructions Modal -->
     <div id="instructions-modal">
@@ -19,6 +18,19 @@
       <p>Solve riddles, earn points, and escape the loop! Using hints will cost points.</p>
       <button id="start-game">Start Game</button>
     </div>
+
+    <!-- Music Controls Section -->
+<div id="music-controls">
+  <button id="toggle-music">Toggle Music</button>
+</div>
+
+<!-- Hidden Audio Element -->
+<audio id="background-music" loop autoplay>
+  <source src="song.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+
 
     <!-- Game Area -->
     <div id="game-area" style="display: none;">
